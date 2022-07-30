@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"mshr-h.veriloghdl",
+			"isaact.verilog-formatter"
+		]
+	},
+	"settings": {}
+}
