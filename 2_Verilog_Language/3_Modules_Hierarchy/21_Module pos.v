@@ -7,4 +7,5 @@ module top_module (
            output out2
        );
 mod_a(out1, out2, a, b, c, d);
+
 endmodule

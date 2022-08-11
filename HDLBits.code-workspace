@@ -6,9 +6,10 @@
 	],
 	"extensions": {
 		"recommendations": [
-			"mshr-h.veriloghdl",
-			"isaact.verilog-formatter"
+			"teros-technology.teroshdl"
 		]
 	},
-	"settings": {}
+	"settings": {
+		"systemverilog.formatCommand": "E:\\Verible\\verible-verilog-format.exe --indentation_spaces 4  --case_items_alignment align"
+	}
 }

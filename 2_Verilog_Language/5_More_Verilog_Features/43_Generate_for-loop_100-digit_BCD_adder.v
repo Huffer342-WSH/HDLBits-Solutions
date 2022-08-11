@@ -1,26 +1,28 @@
 /* encoding :utf-8  实例数组*/
-module top_module(
-           input [399:0] a, b,
-           input cin,
-           output cout,
-           output [399:0] sum );
+module top_module (
+    input [399:0] a,
+    b,
+    input cin,
+    output cout,
+    output [399:0] sum
+);
 
-wire [99:0] intermediate_cin,intermediate_cout;
+    wire [99:0] intermediate_cin, intermediate_cout;
 
-bcd_fadd u_bcd_fadd[99:0](
-             a[399:0],
-             b[399:0],
-             intermediate_cin[99:0],
-             intermediate_cout[99:0],
-             sum[399:0]
-         );
+    bcd_fadd u_bcd_fadd[99:0] (
+        a[399:0],
+        b[399:0],
+        intermediate_cin[99:0],
+        intermediate_cout[99:0],
+        sum[399:0]
+    );
 
-assign intermediate_cin[0] = cin;
-assign intermediate_cin[99:1] = intermediate_cout[98:0];
-assign cout = intermediate_cout[99];
+    assign intermediate_cin[0] = cin;
+    assign intermediate_cin[99:1] = intermediate_cout[98:0];
+    assign cout = intermediate_cout[99];
 endmodule
 
-    /*
+/*
     module top_module(
             input [399:0] a, b,
             input cin,

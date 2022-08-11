@@ -1,6 +1,7 @@
 module top_module (
-           output out);
+    output out
+);
 
-supply0 gnd;
-assign out = gnd;
+    supply0 gnd;
+    assign out = gnd;
 endmodule
